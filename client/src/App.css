@@ -1,0 +1,17 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-image: url('./images/back.jpg');
+    width: 100vw;
+    min-height: 100vh;
+}
+
+.pageNotFound{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
