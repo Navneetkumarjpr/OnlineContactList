@@ -26,7 +26,7 @@ useEffect(() => {
         <div className="loginContainer">
           <h1>Welcome to the online Contact List Saving Website</h1>
           <h3>To use the Website easily, Please Login First</h3>
-           <GoogleLogin className='googleLoginButton'  clientId={process.env.REACT_APP_CLIENT_Id} isSignedIn={true} buttonText="Login" onAutoLoadFinished = {true} onSuccess={onLoginSuccess} onFailure={onLoginFailure} cookiePolicy={'single_host_origin'}></GoogleLogin>
+           <GoogleLogin className='googleLoginButton'  clientId={process.env.REACT_APP_CLIENT_Id} isSignedIn={true} buttonText="Login" onAutoLoadFinished = {true} onSuccess={onLoginSuccess} onFailure={onLoginFailure} ></GoogleLogin>
         </div>
     </div>
   )
