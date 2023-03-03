@@ -14,7 +14,7 @@ mongoose.connect(url,{useNewUrlParser: true, useUnifiedTopology:true},()=>{
 app.use(cors());
 app.use(bodyParser.json({ extended:true })); 
 app.use(bodyParser.urlencoded({ extended:true }));
-
+console.log(process.env.PORT); 
 const port = process.env.PORT || 8000;
 // app.use("/",Routes);
 app.use('/',Routes)
