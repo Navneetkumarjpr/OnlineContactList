@@ -7,7 +7,7 @@ const bodyParser = require("body-parser");
 const path=require("path")
 const Routes= require('./routes/Routes');
 dotenv.config();
-mongoose.connect("mongodb+srv://onlinelist:onlinelist@cluster0.6m18r.mongodb.net/?retryWrites=true&w=majority",{useNewUrlParser: true, useUnifiedTopology:true},()=>{
+mongoose.connect(`${process.env.MONGO_URL}`,{useNewUrlParser: true, useUnifiedTopology:true},()=>{
     console.log("db connected");
 }) 
 app.use(cors());
