@@ -22,7 +22,7 @@ const Update = () => {
     const loadContact= async () =>{
         try {
     //   alert("calling get a contact");
-            let res=await axios.get(`http://localhost:8000/contact/${id}`);
+            let res=await axios.get(`https://srms-backend-gad6pukzk-navneetkumarjpr.vercel.app/contact/${id}`);
     //   alert("done get a contact");
             // console.log("res",res.data[0]);
             setUser(res.data[0]);
@@ -46,7 +46,7 @@ const Update = () => {
             alert("Add correct Details");
         }else{
                 alert('Successfully updated the  Contact');
-               await axios.put(`http://localhost:8000/update/detail/${id}`,user);
+               await axios.put(`https://srms-backend-gad6pukzk-navneetkumarjpr.vercel.app/update/detail/${id}`,user);
                history.push("/");
         }
     }

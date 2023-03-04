@@ -30,7 +30,7 @@ const NewData = () => {
       }
       const loadContactList= async () =>{
         try {
-            await axios.post("http://localhost:8000/addcontact",addData);
+            await axios.post("https://srms-backend-gad6pukzk-navneetkumarjpr.vercel.app/addcontact",addData);
             // setAddData({...addData});
             history.push('/')
         } catch (error) {

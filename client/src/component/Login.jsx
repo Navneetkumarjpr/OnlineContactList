@@ -11,11 +11,11 @@ const Login = () => {
   const {setUserLogged} = useContext(UserContext)
   const onLoginSuccess= async (res)=>{
     // console.log("Login SuccessFull ",res.profileObj);
-    setUserLogged(res.profileObj);
+    await setUserLogged(res.profileObj);
 }
 
-const onLoginFailure=()=>{
-    console.log("Login Failure")
+const onLoginFailure=(err)=>{
+    console.log("Login Failure ",err)
 }
 useEffect(() => {
   history.push('/');

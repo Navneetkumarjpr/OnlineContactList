@@ -6,7 +6,7 @@ import {BsWhatsapp} from "react-icons/bs"
 const UserBlock = ({item,fetchResult}) => {
   const deleteContact=async(e,id)=>{
     e.preventDefault();
-    await axios.delete(`http://localhost:8000/delete/${id}`)
+    await axios.delete(`https://srms-backend-gad6pukzk-navneetkumarjpr.vercel.app/delete/${id}`)
     fetchResult();
 }
   return (

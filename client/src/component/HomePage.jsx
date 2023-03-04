@@ -14,7 +14,9 @@ const HomePage = () => {
   const fetchResult= async()=>{
     try {
       // alert("calling get all contacts");
-      const res = await axios.get(`http://localhost:8000/contacts/${userLogged.googleId}`)
+      // const res = await axios.get(`http://localhost:8000/contacts/${userLogged.googleId}`)
+      
+      const res = await axios.get(`https://srms-backend-gad6pukzk-navneetkumarjpr.vercel.app/contacts/${userLogged.googleId}`)
       // alert("done get all contacts");
       setContacts(res.data);
       // console.log(res.data);
