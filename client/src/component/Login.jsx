@@ -10,7 +10,7 @@ const Login = () => {
   let history = useHistory();
   const {setUserLogged} = useContext(UserContext)
   const onLoginSuccess= async (res)=>{
-    console.log("Login SuccessFull ",res.profileObj);
+    // console.log("Login SuccessFull ",res.profileObj);
     setUserLogged(res.profileObj);
 }
 
